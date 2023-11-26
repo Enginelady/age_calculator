@@ -1,0 +1,123 @@
+/* The rrot tag is basically a general tag where all in this case colours  are together then, you can always pick from it into its appropriate tag or class when necessary. It makes work easy !
+It must have two small hyphens before the name of the colour and no space must be made until after the double colon just after the colour name.
+To access the colours when ypu want to input it in its tag, use a variable [ background-colour: var(--colour); }  */
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Off-white: hsl(0, 0%, 94%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --Off-black: hsl(0, 0%, 8%);
+    --Purple: hsl(288, 70%, 46%);
+    --Light-red: hsl(0, 100%, 67%);
+}
+
+#font-face {
+    font-family: Pop;
+    src: url(./assets/fonts/Poppins-Regular.ttf);
+}
+
+* {
+    font-family: Pop ; 
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: var(--Off-white);
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    background-color: var(--White);
+    width: 420px;
+    max-width: 80%;
+    padding: 30px;
+    position: relative;
+    border-bottom-right-radius: 150px;
+}
+
+input {
+    width: 70px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid var(--Off-white);
+    outline: none;
+}
+
+input:focus { 
+    border: 2px solid var(--Purple);
+}
+
+small {
+    color: red;
+    font-size: 0.6rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.error-day {
+    color: red;
+    font-size: 0.6rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.submit-btn {
+    width: 70px;
+    height: 70px;
+    padding: 20px;
+    display: flex;
+    background-color: var(--Purple);
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    right: 30px;
+    top: 50px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: black;
+}
+.output-year {
+    color: var(--Purple);
+    font-style: italic;
+    font-size: 2.85rem;
+}
+
+.output-month {
+    color: var(--Purple);
+    font-style: italic;
+    font-size: 2.85rem;
+}
+
+.output-day {
+    color: var(--Purple);
+    font-style: italic;
+    font-size: 2.85rem;
+}
+
+.nil {
+    font-size: 1.75rem;
+    color: var(--Off-black);
+    font-style: normal;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 555;
+}
+
+.input-flex {
+    display: flex;
+    border-bottom: 2px solid var(--Off-white) ;
+    margin-bottom: 2px;
+}
